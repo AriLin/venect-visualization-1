@@ -64,7 +64,7 @@ export default function DataMapping(props) {
   var output;
   if (result || result === 0) {
     //console.log(result);
-    output = isNaN(result) ? result : round(result, 3) + ' ' + unit;
+    output = isNaN(result) ? result : round(result, 2) + ' ' + unit;
   } else {
     //console.log('null');
     output = 'loading';
