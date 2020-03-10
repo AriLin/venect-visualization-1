@@ -7,7 +7,7 @@ export default function DataMapping(props) {
   function round(value, decimals) {
     return Number(Math.round(value + 'e' + decimals) + 'e-' + decimals);
   }
-
+  // Select proper unit for values
   unit = title.includes('TE')
     ? '°C'
     : title.includes('F1_FE') || title.includes('AK_P_FE') || title.includes('F2_FE')
